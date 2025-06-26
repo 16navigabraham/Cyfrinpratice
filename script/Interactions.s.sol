@@ -1,9 +1,12 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
+import {DevOpsTools} from "foundry-devops/DevOpsTools.sol";
+import {ZkSyncChainChecker} from "foundry-devops/ZkSyncChainChecker.sol";
+import {FoundryZkSyncChecker} from "foundry-devops/FoundryZkSyncChecker.sol";
 import {Script, console} from "forge-std/Script.sol";
-import {FundMe} from "../src/FundMe.sol";
-import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
+
+
 
 contract FundFundMe is Script {
     uint256 SEND_VALUE = 0.1 ether;
